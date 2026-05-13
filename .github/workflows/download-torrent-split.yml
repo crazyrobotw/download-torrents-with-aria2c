@@ -16,7 +16,7 @@ jobs:
         run: aria2c --seed-time=0 "${{ github.event.inputs.MAGNET }}"
 
       - name: Zip Downloaded Torrent
-        run: zip -r -s 1536m torrent.zip *
+        run: zip -r -s 500m torrent.zip *
 
       - name: Create Release on GitHub
         uses: softprops/action-gh-release@v3
